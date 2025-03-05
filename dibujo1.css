@@ -1,0 +1,52 @@
+html, body {
+  background: #db86; 
+}
+
+.cartoon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vmin;
+  height: 80vmin;
+}
+
+.cartoon div {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.b {
+  border: 0.5vmin solid;
+}
+
+.r {
+  border-radius: 100%;
+}
+
+.hb::before,
+.ha::after {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.leg {
+  width: 4%;
+  height: 15%;
+  border-right: 0.5vmin solid;
+  border-bottom: 0.5vmin solid;
+  top: 83%;
+  left: 41%;
+  transform-origin: bottom right;
+  transform: skewY(-30deg);
+}
+
+.leg + .leg {
+  left: auto;
+  right: 45%;
+  top: 84%;
+  transform: scaleX(-1) skewY(-30deg);
+}
+
